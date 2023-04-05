@@ -23,6 +23,7 @@
     list-style-type: none;
     display: flex;
     align-items: baseline;
+    margin-right: 48px;
 }
 
 .header a {
@@ -34,13 +35,7 @@
 /* MAIN CONTENT AREA */
 
 
-.main-content-left {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    margin: 48px;
 
-}
 
 button {
     background-color: #3882F6;
@@ -59,12 +54,40 @@ button {
 .main-content {
     display:flex;
     background-color: #1F2937;
+    flex: 1;
 
+}
+
+.main-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-content-right {
+    text-align:center;
+    margin-left: 0px;
+}
+
+.main-content-left,
+.main-content-right {
+    margin: 48px;
+    flex: 1;
+    padding: 16px;
+    margin-top: 0px;
+    margin-bottom: 48px;
 }
 
 .main-content img {
     width: 100%;
     height: 100%;
+    max-width: 600px;
+    max-height: 450px;
+    align-self: center;
+    border: 8px solid rgb(175, 57, 57);
+    border-radius: 32px;
+    box-shadow: 2px 2px 3px black;
+    object-fit: cover;
+    
   
 }
 
@@ -79,11 +102,6 @@ button {
     color: #E5E7EB;
 }
 
-.hero-text,
-.hero-secondary-text,
-.hero-button {
-    /* flex-grow: 1; */
-}
 
 /* SMALLER INFO CARDS SECTION */
 .info img {
