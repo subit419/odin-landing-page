@@ -146,8 +146,10 @@ button {
 
 /* The quote section */
 .content-quote-block {
-    background-color: #E5E7EB;
+    background-color: #f1f3f7;
+    margin: 48px;
 }
+
 .quote-text {
     font-size: 36px;
     font-style: italic;
@@ -169,8 +171,64 @@ button {
     padding: 16px;
 }
 
+.cta-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* The call to action */
+.call-to-action {
+    display: flex;
+    background-color: #3882F6;
+    margin: 32px 100px;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+}
 
+.cta-left {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    flex: 2;
+}
+.cta-right {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+}
 
+.cta-title {
+    color: #f1f3f7;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+.cta-text {
+    color: #f1f3f7;
+    font-size: 12px;
+    padding: 8px;
+}
+.cta-right .cta-button {
+    border-color: white;
+    writing-mode: horizontal-tb;
+
+    border-style: outset;
+    padding: 8px;
+    margin: 4px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1F2937;
+    text-align:center;
+    color: rgb(235, 230, 230);
+    padding: 16px;
+    font-size: 12px;
+}
 
 
