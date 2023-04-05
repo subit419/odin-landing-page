@@ -1,4 +1,4 @@
-
+/* HEADER */
 
 .header {
     background-color: #1F2937;
@@ -25,6 +25,23 @@
     align-items: baseline;
 }
 
+.header a {
+    text-decoration: 0;
+    color: #E5E7EB;
+    margin-right:48px;
+}
+
+/* MAIN CONTENT AREA */
+
+
+.main-content-left {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 48px;
+
+}
+
 button {
     background-color: #3882F6;
     color: white;
@@ -39,36 +56,6 @@ button {
     
 }
 
-.main-content-left {
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    margin: 48px;
-
-}
-.info img {
-    max-height: 300px;
-    max-width: 300px;
-    
-    height: auto;
-    width: auto;
-    
-
-}
-.container {
-    display: flex;
-    gap: 8px;
-    flex-wrap:wrap;
-    justify-content: space-around;
-}
-
-.info {
-    max-width: 300px;  
-    border: 8px;
-    border-color: #3882F6;
-    
-}
-
 .main-content {
     display:flex;
     background-color: #1F2937;
@@ -76,7 +63,9 @@ button {
 }
 
 .main-content img {
-  flex: 1 1 300px;
+    width: 100%;
+    height: 100%;
+  
 }
 
 .hero-text {
@@ -96,10 +85,44 @@ button {
     /* flex-grow: 1; */
 }
 
+/* SMALLER INFO CARDS SECTION */
+.info img {
+    max-height: 300px;
+    max-width: 300px;
+    
+    height: auto;
+    width: auto;
+    border: 8px solid rgb(175, 57, 57);
+    border-radius: 32px;
+    box-shadow: 2px 2px 3px black;
+    object-fit: cover;
+    
 
-a {
-    text-decoration: 0;
-    color: #E5E7EB;
-    margin-right:48px;
 }
+.container {
+    display: flex;
+    gap: 8px;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.content-block-2 .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding: 16px;
+    text-align: center;
+}
+.info {
+    text-align: center;
+    max-width: 300px;  
+    border: 8px;
+    border-color: #3882F6;
+    
+}
+
+
+
+
+
 
